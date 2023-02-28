@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.box {
+    width: 500px;
+    background: #4967CF;
+    border-radius: 50px 0px;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    padding: 31px 25px 21px 25px;
+    position: relative;
+    padding-bottom: 187px;
+    overflow: hidden;
+}
+
+button {
+    font-family: 'Jura', sans-serif;
+    background: #75A6F1;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    transition: all 0.3s;
+}
+button:hover{
+    background: white;
+    color: #75A6F1;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+}
+
+hr {
+    height: 2px;
+    background: #FFFFFF;
+    margin-bottom: 56px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(3, 60px);
+    margin: auto;
+    width: max-content;
+    gap: 8px;
+}
+
+.new-game {
+    grid-column: 1/6;
+}
+
+p{
+    padding: 17px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.tryes{
+    background: #3251BD;
+    bottom: 70px;
+}
+.hint{
+    background: #2343B3;
+    bottom: 0;
+}
+.disactive{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.win{
+    background-color: green;
+}
